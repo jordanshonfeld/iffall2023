@@ -1,0 +1,34 @@
+body{
+    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: aliceblue;
+}
+h3{
+    margin: 3%;
+}
+.sub{
+    color: darkgray;
+    font-size: small;
+}
+#summary{
+    margin-left: 5%;
+}
+#content{
+    text-align: center;
+    margin-bottom: 5%;
+}
+#font-weight{
+    font-weight: bold;
+}
+#font-style{
+    font-style: italic;
+}
+#letter-spacing{
+    letter-spacing: 0.6em;
+}
+#text-transform{
+    text-transform: uppercase;
+}
+#text-decoration{
+    text-decoration: underline;
+}
