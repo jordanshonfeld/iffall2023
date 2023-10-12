@@ -1,0 +1,64 @@
+body{
+    width: 800px;
+}
+
+@media (max-width: 800px){
+    body{
+        width: 90%;
+    }
+}
+
+@media (min-width: 640px){
+    body{
+        background-color: #eaf6ff;
+    }
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.grid aside{
+    display: flex;
+    width:170px;
+    margin:10px;
+    font-size: 0.8rem;
+
+}
+
+.grid ul{
+    padding-left: 0;
+    margin: 0;
+}  
+
+.grid2{
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.grid2 li{
+    width: 100%;
+}
+
+.grid2 aside{
+    margin:10px;
+}
+
+@media (min-width:480px){
+    .grid2 li {
+        width: 50%;
+    }
+}
+
+@media (min-width:640px){
+    .grid2 li {
+        width: 25%;
+    }
+}

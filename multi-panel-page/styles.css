@@ -1,0 +1,142 @@
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+html{
+    margin:0;
+    padding:0;
+}
+
+#main-heading{
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 150px;
+    background-image: url('johnson_wildflowers_31.jpg');
+    color: aliceblue;
+}
+
+#main-heading h1{
+    /* margin-top: 150px; */
+    font-size: 77px;
+    font-weight: 900;
+    letter-spacing: 3.5px;
+    word-spacing: -5px;
+    padding-top: 155px;
+    margin: 0px 0px 0px 0px;
+}
+#main-heading h3{
+    font-size:30px;
+    letter-spacing: 0.75px;
+    margin-top: 0px;
+    padding:0px;
+    font-weight:900;
+}
+
+.italic{
+    font-style: italic;
+}
+
+#section-2{
+    background-color:#a6b697;
+    padding:10px 235px 40px 235px;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+#section-2 img{
+    float: right;
+    height: 300px;
+    width: 400px;
+    border: 1px solid white;
+    margin-left:45px;
+    margin-bottom:30px
+}
+
+#section-2 p{
+    
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: -3px;
+    margin-left: -3px;
+    letter-spacing: -1px;
+    word-spacing: 2px;
+}
+
+#section-3{
+    background-color: 	#7a876f;
+    margin-top:-35px;
+    padding-top:10px;
+    padding-bottom:75px;
+}
+
+.grid-container{
+    display: grid;
+    margin-left: 235px;
+    margin-right:235px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 175px 175px;
+    gap: 0px;
+}
+
+.grid-container img{
+    height: 150px;
+    width: 200px;
+    float:left;
+    padding-right:10px;
+}
+
+.grid-container h1{
+    margin-top: 2px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: -3px;
+}
+
+.grid-container p{
+    margin-top:-5px;
+    padding-top:0px;
+    font-size: 18px;
+    margin-right:20px;
+}
+
+#section-4{
+    margin-top:-35px;
+    background-color: #88a78e;
+    padding-bottom:75px;
+    margin-bottom: 0px;
+}
+
+#section-4 h2{
+    padding-top:30px;
+}
+#section-4 p{
+    margin-top:-2px;
+    font-size:25px;
+    padding-left:355px;
+    padding-right:355px;
+    text-align: center;
+    line-height: 36px;
+    letter-spacing: 0.4px;
+}
+
+footer{
+    background-color: grey;
+    padding-bottom:43px;
+}
+
+footer p{
+    margin:0px;
+    padding-top:45px;
+    padding-left:233px;
+    letter-spacing: 0.75px;
+}
