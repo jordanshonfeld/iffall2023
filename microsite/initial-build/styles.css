@@ -212,3 +212,8 @@ body{
 .icon-grid div:hover p {
     color: #ffcc00; /* Change the text color on hover */
 }
+
+/* .icon-grid div{
+    background-color: #c8802d;
+    padding-left: 35px;
+} */
