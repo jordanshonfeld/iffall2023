@@ -1,0 +1,214 @@
+html{
+    margin:0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+body{
+    margin:0;
+}
+.banner{
+    margin:0;
+    padding:0;
+    background-color: #1F3B4D;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.banner h1 {
+    padding: 40px;
+    margin: 0; 
+    color:#33a457;
+    font-size:60px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.banner img{
+    width: 20%;
+    float: left; /* Float the image to the left */
+    margin-right: 260px;
+    order: -1;
+    margin-bottom:30px;
+}
+
+.banner::before,
+.banner::after {
+    content: "";
+    position: absolute;
+    width: 50%; /* Adjust the width of the ovals */
+    height: 60px; /* Adjust the height of the ovals */
+    background-color: #1F3B4D; /* Match the background color of the banner */
+    z-index: 5; /* Behind the content */
+    border-radius: 50%; /* Create circular shapes */
+}
+
+.banner::before {
+    bottom: -20px; /* Adjust the distance from the bottom */
+    left: 0%; /* Adjust the position of the first oval */
+}
+
+.banner::after {
+    bottom: -30px; /* Adjust the distance from the bottom */
+    right: 0%; /* Adjust the position of the third oval */
+}
+
+.content-one {
+    position: relative;
+    height: 500px;
+    background-color: #c8802d;
+}
+
+.content-one::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    background-color: #c8802d;
+    z-index: 5;
+    border-radius: 50%;
+    top: -30px;
+    left: 0%;
+}
+
+.fa-bottle-droplet {
+    font-size: 60px; /* Adjust the icon size */
+    margin: 5px; /* Adjust the margin between icons */
+    transform: rotate(0deg); /* Initial rotation */
+}
+
+.fa-bottle-droplet:nth-child(even) {
+    transform: rotate(45deg); /* Rotate even icons to the right */
+}
+
+.fa-bottle-droplet:nth-child(3n) {
+    transform: rotate(-45deg); /* Rotate every third icon to the left */
+}
+
+/* .fa-bottle-droplet:nth-child(2):hover{
+    transform: rotate(45deg);
+    transition: all .5s;
+    font-size: 80px;
+} */
+
+#bottle-1:hover{
+    transform: rotate(180deg);
+    transition: all .5s;
+    font-size: 80px; 
+}
+
+.content-one h1{
+    margin: 0;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.content-one {
+    position: relative;
+    height: 800px;
+    background-color: #c8802d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-cover {
+    position: relative;
+    border-radius: 10%;
+    background-color: #db1414;
+    width: 100%;
+    height: 150px;
+    padding-top: 100px;
+    margin: 0 200px 0 200px;
+    padding-bottom: 130px;
+    z-index: 2;
+}
+
+.history-text {
+    position: absolute;
+    margin: 0 250px 0 250px;
+    text-align: center;
+    color: #fff; /* Adjust the text color */
+    margin-top: 20px; /* Adjust the spacing between history-cover and history-text */
+    z-index:1;
+    font-size: 20px;
+}
+
+.history-cover:hover{
+    z-index: -1;
+    font-size: 0;
+}
+
+.content-one::before,
+.content-one::after {
+    content: "";
+    position: absolute;
+    width: 50%; /* Adjust the width of the ovals */
+    height: 60px; /* Adjust the height of the ovals */
+    background-color: #c8802d; /* Match the background color of the content-one */
+    z-index: 5; /* Behind the content */
+    border-radius: 50%; /* Create circular shapes */
+}
+
+.content-one::before {
+    bottom: -30px; /* Adjust the distance from the bottom */
+    left: 0%; /* Adjust the position of the first oval */
+}
+
+.content-one::after {
+    bottom: -30px; /* Adjust the distance from the bottom */
+    right: 0%; /* Adjust the position of the second oval */
+}
+
+.content-two {
+    position: relative;
+    padding-top:100px;
+    padding-bottom: 100px;
+    height: 100%;
+    background-color: #33a457;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-two::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    background-color: #33a457;
+    z-index: 5;
+    border-radius: 50%;
+    top: -30px;
+    left: 0%;
+}
+
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 200px; /* Adjust the gap between icons */
+    row-gap: 100px;
+}
+
+.fa-bottle-droplet {
+    font-size: 100px; /* Adjust the icon size */
+}
+
+/* Apply the rotation directly to the .fa-bottle-droplet elements */
+.icon-grid div:nth-child(odd) .fa-bottle-droplet {
+    transform: rotate(-45deg);
+}
+
+.icon-grid div:nth-child(even) .fa-bottle-droplet {
+    transform: rotate(45deg);
+}
+
+.content-two div p{
+    color: #33a457;
+    font-size: 20px;
+}
+
+.icon-grid div:hover p {
+    color: #ffcc00; /* Change the text color on hover */
+}
