@@ -15,13 +15,7 @@ body{
     align-items: center;
     position: relative;
 }
-.banner h1 {
-    padding: 40px;
-    margin: 0; 
-    color:#33a457;
-    font-size:60px;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-}
+
 .banner img{
     width: 20%;
     float: left; /* Float the image to the left */
@@ -83,6 +77,11 @@ body{
     transform: rotate(-45deg); /* Rotate every third icon to the left */
 }
 
+.banner .fa-bottle-droplet{
+    font-size: 120px;
+    margin-right: 5%;
+}
+
 /* .fa-bottle-droplet:nth-child(2):hover{
     transform: rotate(45deg);
     transition: all .5s;
@@ -103,29 +102,36 @@ body{
     padding-top: 30px;
 }
 
+.content-two h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    /* padding-top: 30px; */
+    position: absolute;
+}
+
 .content-one {
     position: relative;
-    height: 800px;
+    height: 100%;
     background-color: #c8802d;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 100px;
 }
 
 .history-cover {
-    position: relative;
+    position: absolute;
     border-radius: 10%;
     background-color: #db1414;
-    width: 100%;
-    height: 150px;
-    padding-top: 100px;
+    width: 30%;
+    height: 15%;
     margin: 0 200px 0 200px;
-    padding-bottom: 130px;
+    padding: 20px;
     z-index: 2;
 }
 
 .history-text {
-    position: absolute;
+    position: relative;
     margin: 0 250px 0 250px;
     text-align: center;
     color: #fff; /* Adjust the text color */
@@ -134,10 +140,10 @@ body{
     font-size: 20px;
 }
 
-.history-cover:hover{
+/* .history-cover:hover{
     z-index: -1;
     font-size: 0;
-}
+} */
 
 .content-one::before,
 .content-one::after {
@@ -168,7 +174,7 @@ body{
     background-color: #33a457;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .content-two::before {
@@ -183,13 +189,41 @@ body{
     left: 0%;
 }
 
+.history-grid{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    margin:25% 5% 5% 5%;
+    gap:200px;
+    row-gap: 100px;
+}
+
+@media (max-width: 900px) {
+    .history-grid { display:block; margin-top: 0% }
+    .history-cover{display: none;}
+    .banner i{display:none;}
+  }
+
+.history-content-cover{
+    height: 30px;
+    width: 50%;
+    background-color: #ffcc00;
+}
 
 .icon-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 200px; /* Adjust the gap between icons */
     row-gap: 100px;
+    margin-top: 10%;
 }
+
+@media (max-width: 900px) {
+    .icon-grid { display:block;}
+    .icon-grid div:active p {
+        color: #ffcc00; /* Change the text color on hover */
+    }
+  }
 
 .fa-bottle-droplet {
     font-size: 100px; /* Adjust the icon size */
