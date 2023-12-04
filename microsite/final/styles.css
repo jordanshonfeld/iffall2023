@@ -1,0 +1,414 @@
+html{
+    margin:0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+body{
+    margin:0;
+}
+.banner{
+    margin:0;
+    padding:0;
+    background-color: #1F3B4D;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.banner #logo{
+    width: 20%;
+    float: left; /* Float the image to the left */
+    margin-right: 130px;
+    order: -1;
+    margin-bottom:30px;
+}
+.banner div{
+    padding: 25px;
+    margin:25px;
+}
+
+.banner #pour-out{
+    position:relative;
+    right: 33.5%;
+    top: 30px;
+    z-index: 7;
+    color: #DB812E;
+    transform: scale(.01);
+}
+
+#bottle-div-1:hover #bottle-1{
+    transform: rotate(180deg);
+    transition: all .5s;
+    /* font-size: 80px;  */
+}
+
+#bottle-div-1:hover ~ #pour-out {
+    transform: scale(1.2); /* Scale up the pour-out element on hover */
+    top:120px;
+    right: 33%;
+    transition: all 1s;
+}
+
+/* #bottle-1:hover ~ .banner {
+    padding-bottom: -20px;
+    transition: all 5s;
+} */
+
+.banner #pour-out-red{
+    position:relative;
+    right: 52%;
+    top: 30px;
+    z-index: 7;
+    color: #DB812E;
+    transform: scale(.01);
+}
+
+#bottle-div-2:hover #bottle-2{
+    transform: rotate(180deg);
+    transition: all .5s;
+    /* font-size: 80px;  */
+}
+
+#bottle-div-2:hover ~ #pour-out-red {
+    transform: scale(1.2); /* Scale up the pour-out element on hover */
+    top:130px;
+    right: 53.5%;
+    transition: all 1s;
+}
+
+#bottle-div-2:hover ~ .content-one{
+    background-color: #db1414;
+}
+
+.banner #pour-out-yellow{
+    position:relative;
+    right: 580px;
+    top: 30px;
+    z-index: 7;
+    color: #FFE5B4;
+    transform: scale(.01);
+}
+
+#bottle-div-3:hover #bottle-3{
+    transform: rotate(180deg);
+    transition: all .5s;
+    /* font-size: 80px;  */
+}
+
+#bottle-div-3:hover ~ #pour-out-yellow {
+    transform: scale(1.2); /* Scale up the pour-out element on hover */
+    top:130px;
+    right: 43%;
+    transition: all 1s;
+}
+
+#bottle-div-3:hover ~ .content-one{
+    background-color: #f6a192;
+}
+
+.banner #pour-out-green{
+    position:relative;
+    right: 23%;
+    top: 30px;
+    z-index: 7;
+    color: #DB812E;
+    transform: scale(.01);
+}
+
+#bottle-div-4:hover #bottle-4{
+    transform: rotate(180deg);
+    transition: all .5s;
+    /* font-size: 80px;  */
+}
+
+#bottle-div-4:hover ~ #pour-out-green {
+    transform: scale(1.2); /* Scale up the pour-out element on hover */
+    top:130px;
+    right: 23%;
+    transition: all 1s;
+}
+
+#bottle-div-4:hover ~ .content-one{
+    background-color: #33a457;
+}
+
+.banner::before,
+.banner::after {
+    content: "";
+    position: absolute;
+    width: 33.33%;
+    height: 40px;
+    background-color: #1F3B4D;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+.banner::before {
+    bottom: -20px;
+    left: 0;
+}
+
+.banner::after {
+    bottom: -20px;
+    left: 66.66%; /* Adjust the position to make them touch */
+}
+
+.content-one.highlight::before,
+.content-one.highlight::after {
+    background-color: inherit; /* Use the background color of .content-one */
+}
+
+.content-one::before {
+    content: "";
+    position: absolute;
+    width: 33.33%;
+    height: 40px;
+    background-color: #DB812E;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+.content-one::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    background-color: #DB812E;
+    z-index: 5;
+    border-radius: 50%;
+}
+
+.content-one::before {
+    top: -20px;
+    left: 33.33%; /* Adjust the position to make them touch */
+}
+
+.content-one::after {
+    bottom: -20px;
+    left: 50%; /* Adjust the position to make them touch */
+}
+
+
+
+
+.fa-bottle-droplet {
+    font-size: 60px; /* Adjust the icon size */
+    margin: 5px; /* Adjust the margin between icons */
+    transform: rotate(0deg); /* Initial rotation */
+}
+
+.fa-bottle-droplet:nth-child(even) {
+    transform: rotate(45deg); /* Rotate even icons to the right */
+}
+
+.fa-bottle-droplet:nth-child(3n) {
+    transform: rotate(-45deg); /* Rotate every third icon to the left */
+}
+
+.banner .fa-bottle-droplet{
+    font-size: 120px;
+    margin-right: 5%;
+}
+
+#bottle-1{
+    transform: rotate(-45deg);
+}
+#bottle-2{
+    transform: rotate(45deg);
+}
+#bottle-3{
+    transform: rotate(45deg);
+}
+
+/* .fa-bottle-droplet:nth-child(2):hover{
+    transform: rotate(45deg);
+    transition: all .5s;
+    font-size: 80px;
+} */
+
+.content-one h1{
+    margin: 0;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+}
+
+.content-two h1{
+    font-size: 60px;
+    color: white;
+    align-items: center;
+    /* padding-top: 30px; */
+    position: absolute;
+    text-shadow: #1F3B4D 3px 3px;
+}
+.content-two h1:hover{
+    letter-spacing: 10px;
+    text-shadow: #ffcc00 5px 5px;
+}
+
+.history-cover h1{
+    text-shadow: #1F3B4D 3px 3px;
+}
+
+.content-one {
+    position: relative;
+    height: 100%;
+    background-color: #DB812E;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    transition: background-color 0.5s ease;
+}
+
+.history-cover {
+    position: absolute;
+    border-radius: 10%;
+    width: 30%;
+    height: 15%;
+    margin: 0 100px 0 100px;
+    padding: 20px;
+    z-index: 2;
+}
+
+.history-content{
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.history-cover h1:hover{
+    letter-spacing: 10px;
+    text-shadow: #ffcc00 5px 5px;
+}
+
+/* .history-cover:hover{
+    z-index: -1;
+    font-size: 0;
+} */
+
+/* .content-one::before,
+.content-one::after {
+    content: "";
+    position: absolute;
+    width: 50%; 
+    height: 60px; 
+    background-color: #DB812E; 
+    z-index: 5; 
+    border-radius: 50%; 
+}
+
+.content-one::before {
+    bottom: -30px; 
+    left: 0%; 
+}
+
+.content-one::after {
+    bottom: -30px; 
+    right: 0%; 
+} */
+
+.content-two {
+    position: relative;
+    padding-top:100px;
+    padding-bottom: 100px;
+    height: 100%;
+    background-color: #33a457;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+}
+
+.content-two::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    background-color: #33a457;
+    z-index: 5;
+    border-radius: 50%;
+    top: -20px;
+    left: 0%;
+}
+
+.history-grid{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    margin:15% 5% 5% 5%;
+    gap:200px;
+    row-gap: 100px;
+}
+
+@media (max-width: 900px) {
+    .history-grid { display:block; margin-top: 0% }
+    .history-cover{display: none;}
+    .banner i{display:none;}
+  }
+
+@media (max-width: 1025px){
+    .pour{
+        display: none;
+    }
+}
+
+.history-content-cover{
+    height: 50px;
+    width: 100%;
+    font-size: 40px;
+    background-color: #ffcc00;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px; /* Adjust the gap between icons */
+    row-gap: 70px;
+    margin-top: 10%;
+}
+
+@media (max-width: 900px) {
+    .icon-grid { 
+        display:block;
+        padding-top:50px;
+    }
+    .icon-grid div:active p {
+        color: #ffcc00; 
+    }
+  }
+
+.fa-bottle-droplet {
+    font-size: 100px; /* Adjust the icon size */
+}
+
+/* Apply the rotation directly to the .fa-bottle-droplet elements */
+.icon-grid div:nth-child(odd) .fa-bottle-droplet {
+    transform: rotate(-45deg);
+}
+
+.icon-grid div:nth-child(even) .fa-bottle-droplet {
+    transform: rotate(45deg);
+}
+
+.content-two div p{
+    color: #33a457;
+    font-size: 20px;
+}
+
+.icon-grid div:hover p {
+    color: #ffcc00 !important;
+    text-shadow: #1F3B4D 2px 2px !important;
+}
+
+.icon-grid div:hover{
+    background-color: #1F3B4D;
+    border-radius: 100%;
+}
+
+.icon-grid div{
+    padding: 25px;
+}
+

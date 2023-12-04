@@ -5,7 +5,7 @@ html{
 body{
     margin:0;
 }
-.banner{
+.banner i{
     margin:0;
     padding:0;
     background-color: #1F3B4D;
@@ -16,7 +16,7 @@ body{
     position: relative;
 }
 
-.banner img{
+.banner #logo{
     width: 20%;
     float: left; /* Float the image to the left */
     margin-right: 260px;
@@ -24,6 +24,12 @@ body{
     margin-bottom:30px;
 }
 
+.banner #pour-out{
+    position:relative;
+    left: 0px;
+    top: 0px;
+    color: #c8802d;
+}
 .banner::before,
 .banner::after {
     content: "";
