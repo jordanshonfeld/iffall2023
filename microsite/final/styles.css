@@ -343,15 +343,12 @@ body{
     row-gap: 100px;
 }
 
-@media (max-width: 900px) {
-    .history-grid { display:block; margin-top: 0% }
-    .history-cover{display: none;}
-    .banner i{display:none;}
-  }
-
 @media (max-width: 1025px){
     .pour{
         display: none;
+        width: 0%;
+        margin:0;
+        padding:0;
     }
 }
 
@@ -369,7 +366,12 @@ body{
     row-gap: 70px;
     margin-top: 10%;
 }
-
+@media (max-width: 1000px){
+    .banner div{
+        margin:15px;
+        padding:15px;
+    }
+}
 @media (max-width: 900px) {
     .icon-grid { 
         display:block;
@@ -377,6 +379,22 @@ body{
     }
     .icon-grid div:active p {
         color: #ffcc00; 
+    }
+    .banner div{
+        margin:0;
+        padding:0;
+    }
+    .history-grid { display:block; margin-top: 0% }
+    .history-cover{display: none;}
+    .banner i{display:none;}
+    .banner #logo{
+        float:none;
+        margin-right: 0;
+        padding: 0;
+        margin-left:40%;
+    }
+    .banner{
+        align-items: center;
     }
   }
 
