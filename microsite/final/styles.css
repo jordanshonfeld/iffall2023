@@ -19,7 +19,7 @@ body{
 .banner #logo{
     width: 20%;
     float: left; /* Float the image to the left */
-    margin-right: 130px;
+    margin-right: 100px;
     order: -1;
     margin-bottom:30px;
 }
