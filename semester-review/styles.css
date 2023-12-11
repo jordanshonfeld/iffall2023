@@ -5,6 +5,7 @@ body {
 
 html{
     background-color:#f0f0f0fe;
+    scroll-behavior: smooth;
 }
 
 .banner{
@@ -35,6 +36,7 @@ a {
     color:black;
 }
 
+
 .banner #down-arrow{
     position: absolute;
     margin-top: 30%;
@@ -43,13 +45,14 @@ a {
     transform: scale(1.5);
 }
 .banner #down-arrow i{
-    animation: bounce 1s infinite alternate;
+    animation: bounce .75s infinite alternate;
+    scroll-behavior: smooth;
 }
 
 
 @keyframes bounce {
     to {
-        transform: translateY(5px);
+        transform: translateY(7px);
     }
 }
 
